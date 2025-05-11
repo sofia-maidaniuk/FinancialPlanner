@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\App.xaml
-4-131188609
+7-596177107
 
-7-1784340531
+11-526525186
 235533082753
-MainWindow.xaml;Views\AddBalanceWindow.xaml;Views\Dashboard.xaml;Views\EditBalanceWindow.xaml;
+MainWindow.xaml;Views\balance\AddBalanceWindow.xaml;Views\balance\Dashboard.xaml;Views\balance\EditBalanceWindow.xaml;Views\category\AddCategoryWindow.xaml;Views\category\CategoriesPage.xaml;Views\category\EditCategoryWindow.xaml;
 
 False
 

@@ -16,6 +16,9 @@ namespace ClassLibrary_FinancialPlanner.Models
 
         [Required]
         public string Type { get; set; } = "витрата"; // "витрата" або "дохід"
+        
+        [Required]
+        public string Icon { get; set; } = string.Empty;
 
         // Навігаційна властивість (необов'язково)
         public ICollection<Transaction>? Transactions { get; set; }

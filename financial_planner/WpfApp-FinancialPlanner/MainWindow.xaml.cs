@@ -20,6 +20,16 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        Dashboard.Navigate(new Dashboard());
+        MainFrame.Navigate(new Dashboard());
+    }
+
+    private void NavigateToDashboard(object sender, RoutedEventArgs e)
+    {
+        MainFrame.Navigate(new Dashboard());
+    }
+
+    private void NavigateToCategories(object sender, RoutedEventArgs e)
+    {
+        MainFrame.Navigate(new CategoriesPage());
     }
 }

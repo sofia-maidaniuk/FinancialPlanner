@@ -2,13 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Views\AddBalanceWindow.xaml.cs">
+    <Compile Update="Views\category\AddCategoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Dashboard.xaml.cs">
+    <Compile Update="Views\category\CategoriesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\EditBalanceWindow.xaml.cs">
+    <Compile Update="Views\balance\AddBalanceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\balance\Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\balance\EditBalanceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\category\EditCategoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
