@@ -1,6 +1,0 @@
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\ClassLibrary-FinancialPlanner.dll
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\ClassLibrary-FinancialPlanner.pdb
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\ClassLibrary-FinancialPlanner.csproj.AssemblyReference.cache
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\ClassLibrary-FinancialPlanner.csproj.CoreCompileInputs.cache
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\ClassLibrary-FinancialPlanner.dll
-D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\ClassLibrary-FinancialPlanner.pdb

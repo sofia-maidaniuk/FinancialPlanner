@@ -1,5 +1,7 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Data;
+using System.IO;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
@@ -14,14 +16,17 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         var services = new ServiceCollection();
-
         services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlite("Data Source=finance.db"));
-
+            options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=FinanceDb;Trusted_Connection=True;"));
 
         Services = services.BuildServiceProvider();
+
+        using (var scope = Services.CreateScope())
+        {
+            var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            SeedData.Initialize(context);
+        }
 
         base.OnStartup(e);
     }
 }
-

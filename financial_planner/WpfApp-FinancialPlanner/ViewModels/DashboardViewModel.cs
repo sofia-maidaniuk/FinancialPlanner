@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClassLibrary_FinancialPlanner.Data;
 using ClassLibrary_FinancialPlanner.Models;
+using System.Collections.ObjectModel;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WpfApp_FinancialPlanner.ViewModels
 {
@@ -12,9 +10,11 @@ namespace WpfApp_FinancialPlanner.ViewModels
     {
         public ObservableCollection<Balance> Balances { get; set; }
 
-        public DashboardViewModel()
+        public DashboardViewModel(AppDbContext context)
         {
-            Balances = new ObservableCollection<Balance>();
+            Balances = new ObservableCollection<Balance>(
+                context.Balances.AsNoTracking().ToList()
+            );
         }
     }
 }
