@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp_FinancialPlanner.Views.AddBalanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Новий баланс" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Назва балансу" Margin="0,0,0,5"/>
+            <TextBox x:Name="NameBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Сума" Margin="0,0,0,5"/>
+            <TextBox x:Name="AmountBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Іконка балансу" Margin="0,0,0,5"/>
+            <ComboBox x:Name="IconComboBox" Margin="0,0,0,10" SelectedIndex="0">
+                <ComboBoxItem Content="💵 Готівка"/>
+                <ComboBoxItem Content="💳 Карта"/>
+                <ComboBoxItem Content="🏦 Депозит"/>
+            </ComboBox>
+
+
+            <Button Content="Зберегти" Click="Save_Click"
+                    Background="#6C63FF" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
