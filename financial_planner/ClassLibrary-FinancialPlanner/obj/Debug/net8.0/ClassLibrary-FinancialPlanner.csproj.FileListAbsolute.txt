@@ -1,0 +1,15 @@
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\net8.0\ClassLibrary-FinancialPlanner.deps.json
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\net8.0\ClassLibrary-FinancialPlanner.dll
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\net8.0\ClassLibrary-FinancialPlanner.pdb
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.GeneratedMSBuildEditorConfig.editorconfig
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.AssemblyInfoInputs.cache
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.AssemblyInfo.cs
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.csproj.CoreCompileInputs.cache
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.sourcelink.json
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.dll
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\refint\ClassLibrary-FinancialPlanner.dll
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.pdb
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ref\ClassLibrary-FinancialPlanner.dll
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\bin\Debug\net8.0\ClassLibrary-FinancialPlanner.runtimeconfig.json
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.csproj.AssemblyReference.cache
+D:\2_course\FinancialPlanner\financial_planner\ClassLibrary-FinancialPlanner\obj\Debug\net8.0\ClassLibrary-FinancialPlanner.genruntimeconfig.cache
