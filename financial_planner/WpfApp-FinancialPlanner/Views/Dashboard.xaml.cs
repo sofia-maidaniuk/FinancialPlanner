@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassLibrary_FinancialPlanner.Data;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp_FinancialPlanner.ViewModels;
 
 namespace WpfApp_FinancialPlanner.Views
 {
@@ -23,6 +26,8 @@ namespace WpfApp_FinancialPlanner.Views
         public Dashboard()
         {
             InitializeComponent();
+            var context = App.Services.GetRequiredService<AppDbContext>();
+            DataContext = new DashboardViewModel(context);
         }
     }
 }

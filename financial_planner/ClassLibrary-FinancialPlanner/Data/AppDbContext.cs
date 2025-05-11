@@ -17,7 +17,6 @@ namespace ClassLibrary_FinancialPlanner.Data
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
-            Database.EnsureCreated(); // автоматичне створення .db-файлу
         }
     }
 }

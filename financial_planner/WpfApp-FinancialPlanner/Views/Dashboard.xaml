@@ -8,13 +8,9 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Dashboard">
-    <Page.DataContext>
-        <vm:DashboardViewModel/>
-    </Page.DataContext>
 
     <Grid Background="#F4F6FA" Margin="20">
         <StackPanel>
-            <!-- Привітання -->
             <TextBlock Text="LaFinance" FontSize="24" FontWeight="Bold" Foreground="#6C63FF" Margin="10,10,0,20"/>
             
             <!-- Назва секції -->
