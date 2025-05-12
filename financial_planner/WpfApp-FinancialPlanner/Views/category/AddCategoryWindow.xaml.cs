@@ -15,27 +15,52 @@ namespace WpfApp_FinancialPlanner.Views
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(NameBox.Text))
-            {
-                MessageBox.Show("Назва не може бути порожньою.");
-                return;
-            }
+            if (!ValidateInput()) return;
 
-            var selectedIcon = IconComboBox.SelectedItem as ComboBoxItem;
-            var selectedType = TypeComboBox.SelectedItem as ComboBoxItem;
+            string name = NameBox.Text.Trim();
+            string icon = GetSelectedIcon();
+            string type = GetSelectedType();
 
-            if (selectedIcon == null || selectedType == null)
-            {
-                MessageBox.Show("Виберіть тип та іконку.");
-                return;
-            }
-
-            CreatedCategory.Name = NameBox.Text;
-            CreatedCategory.Type = selectedType.Content.ToString();
-            CreatedCategory.Icon = selectedIcon.Content.ToString().Split(' ')[0];
+            AssignCategoryData(name, icon, type);
 
             DialogResult = true;
             Close();
+        }
+
+        private bool ValidateInput()
+        {
+            if (string.IsNullOrWhiteSpace(NameBox.Text))
+            {
+                MessageBox.Show("Назва не може бути порожньою.");
+                return false;
+            }
+
+            if (IconComboBox.SelectedItem is not ComboBoxItem || TypeComboBox.SelectedItem is not ComboBoxItem)
+            {
+                MessageBox.Show("Виберіть тип та іконку.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private string GetSelectedIcon()
+        {
+            var item = IconComboBox.SelectedItem as ComboBoxItem;
+            return item?.Content.ToString()?.Split(' ')[0] ?? "";
+        }
+
+        private string GetSelectedType()
+        {
+            var item = TypeComboBox.SelectedItem as ComboBoxItem;
+            return item?.Content.ToString() ?? "витрата";
+        }
+
+        private void AssignCategoryData(string name, string icon, string type)
+        {
+            CreatedCategory.Name = name;
+            CreatedCategory.Icon = icon;
+            CreatedCategory.Type = type;
         }
     }
 }

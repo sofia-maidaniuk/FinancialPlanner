@@ -11,59 +11,92 @@ namespace WpfApp_FinancialPlanner.Views
         public EditCategoryWindow(Category categoryToEdit)
         {
             InitializeComponent();
+            InitializeEditedCategory(categoryToEdit);
+            FillFields();
+        }
 
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            if (!ValidateInput()) return;
+
+            EditedCategory.Name = NameBox.Text.Trim();
+            EditedCategory.Type = GetSelectedType();
+            EditedCategory.Icon = GetSelectedIcon();
+
+            DialogResult = true;
+            Close();
+        }
+
+        private void InitializeEditedCategory(Category source)
+        {
             EditedCategory = new Category
             {
-                Id = categoryToEdit.Id,
-                Name = categoryToEdit.Name,
-                Type = categoryToEdit.Type,
-                Icon = categoryToEdit.Icon
+                Id = source.Id,
+                Name = source.Name,
+                Type = source.Type,
+                Icon = source.Icon
             };
+        }
 
+        private void FillFields()
+        {
             NameBox.Text = EditedCategory.Name;
 
-            foreach (ComboBoxItem item in TypeComboBox.Items)
-            {
-                if (item.Content.ToString() == EditedCategory.Type)
-                {
-                    TypeComboBox.SelectedItem = item;
-                    break;
-                }
-            }
+            SelectComboBoxItem(TypeComboBox, EditedCategory.Type);
+            SelectComboBoxItemStartsWith(IconComboBox, EditedCategory.Icon);
+        }
 
-            foreach (ComboBoxItem item in IconComboBox.Items)
+        private void SelectComboBoxItem(ComboBox comboBox, string value)
+        {
+            foreach (ComboBoxItem item in comboBox.Items)
             {
-                if (item.Content.ToString().StartsWith(EditedCategory.Icon))
+                if (item.Content.ToString() == value)
                 {
-                    IconComboBox.SelectedItem = item;
+                    comboBox.SelectedItem = item;
                     break;
                 }
             }
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private void SelectComboBoxItemStartsWith(ComboBox comboBox, string startsWith)
+        {
+            foreach (ComboBoxItem item in comboBox.Items)
+            {
+                if (item.Content.ToString().StartsWith(startsWith))
+                {
+                    comboBox.SelectedItem = item;
+                    break;
+                }
+            }
+        }
+
+        private bool ValidateInput()
         {
             if (string.IsNullOrWhiteSpace(NameBox.Text))
             {
                 MessageBox.Show("Назва не може бути порожньою.");
-                return;
+                return false;
             }
 
-            var selectedIcon = IconComboBox.SelectedItem as ComboBoxItem;
-            var selectedType = TypeComboBox.SelectedItem as ComboBoxItem;
-
-            if (selectedIcon == null || selectedType == null)
+            if (IconComboBox.SelectedItem is not ComboBoxItem || TypeComboBox.SelectedItem is not ComboBoxItem)
             {
                 MessageBox.Show("Виберіть тип та іконку.");
-                return;
+                return false;
             }
 
-            EditedCategory.Name = NameBox.Text;
-            EditedCategory.Type = selectedType.Content.ToString();
-            EditedCategory.Icon = selectedIcon.Content.ToString().Split(' ')[0];
+            return true;
+        }
 
-            DialogResult = true;
-            Close();
+        private string GetSelectedIcon()
+        {
+            var item = IconComboBox.SelectedItem as ComboBoxItem;
+            return item?.Content.ToString()?.Split(' ')[0] ?? "";
+        }
+
+        private string GetSelectedType()
+        {
+            var item = TypeComboBox.SelectedItem as ComboBoxItem;
+            return item?.Content.ToString() ?? "витрата";
         }
     }
 }

@@ -16,5 +16,5 @@ D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\App.xaml
 235533082753
 MainWindow.xaml;Views\balance\AddBalanceWindow.xaml;Views\balance\Dashboard.xaml;Views\balance\EditBalanceWindow.xaml;Views\category\AddCategoryWindow.xaml;Views\category\CategoriesPage.xaml;Views\category\EditCategoryWindow.xaml;
 
-False
+True
 
