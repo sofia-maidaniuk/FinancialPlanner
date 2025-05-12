@@ -1,17 +1,7 @@
 ﻿using ClassLibrary_FinancialPlanner.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WpfApp_FinancialPlanner.Views
 {
@@ -24,18 +14,39 @@ namespace WpfApp_FinancialPlanner.Views
             InitializeComponent();
 
             // Копіюємо поточні значення
-            EditedBalance = new Balance
-            {
-                Id = balanceToEdit.Id,
-                Name = balanceToEdit.Name,
-                Amount = balanceToEdit.Amount,
-                Icon = balanceToEdit.Icon
-            };
+            EditedBalance = CloneBalance(balanceToEdit);
 
+            PopulateFormFields();
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            if (!TryGetAmount(out decimal amount)) return;
+
+            string icon = ParseSelectedIcon();
+
+            ApplyChanges(NameBox.Text.Trim(), amount, icon);
+
+            DialogResult = true;
+            Close();
+        }
+
+        private Balance CloneBalance(Balance original)
+        {
+            return new Balance
+            {
+                Id = original.Id,
+                Name = original.Name,
+                Amount = original.Amount,
+                Icon = original.Icon
+            };
+        }
+
+        private void PopulateFormFields()
+        {
             NameBox.Text = EditedBalance.Name;
             AmountBox.Text = EditedBalance.Amount.ToString();
 
-            // Встановити вибрану іконку
             foreach (ComboBoxItem item in IconComboBox.Items)
             {
                 if (item.Content.ToString().StartsWith(EditedBalance.Icon))
@@ -46,23 +57,30 @@ namespace WpfApp_FinancialPlanner.Views
             }
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private bool TryGetAmount(out decimal amount)
         {
-            if (!decimal.TryParse(AmountBox.Text, out decimal amount))
+            amount = 0;
+
+            if (!decimal.TryParse(AmountBox.Text, out amount))
             {
                 MessageBox.Show("Сума повинна бути числом.");
-                return;
+                return false;
             }
 
-            var selectedItem = IconComboBox.SelectedItem as ComboBoxItem;
-            var icon = selectedItem?.Content.ToString().Split(' ')[0] ?? "";
+            return true;
+        }
 
-            EditedBalance.Name = NameBox.Text;
+        private string ParseSelectedIcon()
+        {
+            var selectedItem = IconComboBox.SelectedItem as ComboBoxItem;
+            return selectedItem?.Content.ToString().Split(' ')[0] ?? "";
+        }
+
+        private void ApplyChanges(string name, decimal amount, string icon)
+        {
+            EditedBalance.Name = name;
             EditedBalance.Amount = amount;
             EditedBalance.Icon = icon;
-
-            DialogResult = true;
-            Close();
         }
     }
 }
