@@ -12,41 +12,51 @@
             <StackPanel>
                 <TextBlock Text="Мої категорії" FontSize="18" FontWeight="SemiBold" Foreground="#03045e" Margin="10,20,10,10"/>
 
-                <ItemsControl ItemsSource="{Binding Categories}">
+                <ItemsControl ItemsSource="{Binding GroupedCategories}">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Border BorderThickness="1" BorderBrush="#D0D0D0" Background="White" CornerRadius="10" Padding="10" Margin="10,5">
-                                <DockPanel LastChildFill="False">
-                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" DockPanel.Dock="Left">
-                                        <TextBlock Text="{Binding Icon}" FontSize="20" Margin="0,0,10,0" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding Type}" Foreground="#888" VerticalAlignment="Center"/>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
-                                        <Button Content="Редагувати" Click="EditCategory_Click" Padding="6,2" FontSize="12" Cursor="Hand" Margin="0,0,8,0" Background="Transparent" Foreground="#03045e" BorderBrush="#03045e" BorderThickness="1">
-                                            <Button.Template>
-                                                <ControlTemplate TargetType="Button">
-                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
-                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Button.Template>
-                                        </Button>
-                                        <Button Content="Видалити" Click="DeleteCategory_Click" Padding="6,2" FontSize="12" Cursor="Hand" Background="Transparent" Foreground="#FF5C5C" BorderBrush="#FF5C5C" BorderThickness="1">
-                                            <Button.Template>
-                                                <ControlTemplate TargetType="Button">
-                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
-                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
-                                                    </Border>
-                                                </ControlTemplate>
-                                            </Button.Template>
-                                        </Button>
-                                    </StackPanel>
-                                </DockPanel>
-                            </Border>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Type}" FontSize="16" FontWeight="Bold" Margin="10,20,0,10" Foreground="#03045e"/>
+
+                                <ItemsControl ItemsSource="{Binding Categories}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border BorderThickness="1" BorderBrush="#D0D0D0" Background="White" CornerRadius="10" Padding="10" Margin="10,5">
+                                                <DockPanel LastChildFill="False">
+                                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" DockPanel.Dock="Left">
+                                                        <TextBlock Text="{Binding Icon}" FontSize="20" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                                                        <Button Content="Редагувати" Click="EditCategory_Click" Padding="6,2" FontSize="12" Cursor="Hand" Margin="0,0,8,0" Background="Transparent" Foreground="#03045e" BorderBrush="#03045e" BorderThickness="1">
+                                                            <Button.Template>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
+                                                                    </Border>
+                                                                </ControlTemplate>
+                                                            </Button.Template>
+                                                        </Button>
+                                                        <Button Content="Видалити" Click="DeleteCategory_Click" Padding="6,2" FontSize="12" Cursor="Hand" Background="Transparent" Foreground="#FF5C5C" BorderBrush="#FF5C5C" BorderThickness="1">
+                                                            <Button.Template>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
+                                                                    </Border>
+                                                                </ControlTemplate>
+                                                            </Button.Template>
+                                                        </Button>
+                                                    </StackPanel>
+                                                </DockPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+
             </StackPanel>
         </ScrollViewer>
 

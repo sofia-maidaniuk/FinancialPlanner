@@ -10,16 +10,7 @@ namespace WpfApp_FinancialPlanner.ViewModels
     {
         private readonly AppDbContext _context;
 
-        private ObservableCollection<Category> _categories;
-        public ObservableCollection<Category> Categories
-        {
-            get => _categories;
-            set
-            {
-                _categories = value;
-                OnPropertyChanged(nameof(Categories));
-            }
-        }
+        public ObservableCollection<CategoryGroup> GroupedCategories { get; set; } = new();
 
         public CategoryViewModel(AppDbContext context)
         {
@@ -29,7 +20,19 @@ namespace WpfApp_FinancialPlanner.ViewModels
 
         public void LoadCategories()
         {
-            Categories = new ObservableCollection<Category>(_context.Categories.ToList());
+            var all = _context.Categories.ToList();
+
+            var grouped = all
+                .GroupBy(c => c.Type)
+                .Select(g => new CategoryGroup
+                {
+                    Type = g.Key,
+                    Categories = g.ToList()
+                });
+
+            GroupedCategories.Clear();
+            foreach (var group in grouped)
+                GroupedCategories.Add(group);
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
