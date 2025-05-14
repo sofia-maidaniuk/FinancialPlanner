@@ -54,7 +54,7 @@ namespace WpfApp_FinancialPlanner.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp-FinancialPlanner;component/views/balance/dashboard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp-FinancialPlanner;V1.0.0.0;component/views/balance/dashboard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\balance\Dashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

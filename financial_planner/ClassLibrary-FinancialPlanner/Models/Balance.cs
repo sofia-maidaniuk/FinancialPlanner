@@ -9,7 +9,7 @@ namespace ClassLibrary_FinancialPlanner.Models
 {
     public class Balance
     {
-        public int Id { get; set; } // 🔹 Додати Id обов’язково для EF
+        public int Id { get; set; } 
 
         [Required]
         public string Name { get; set; } = string.Empty;
@@ -20,5 +20,11 @@ namespace ClassLibrary_FinancialPlanner.Models
 
         // Навігаційна властивість
         public ICollection<Transaction>? Transactions { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Icon} {Name}";
+        }
+
     }
 }
