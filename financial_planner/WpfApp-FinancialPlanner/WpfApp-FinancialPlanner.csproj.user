@@ -11,13 +11,22 @@
     <Compile Update="Views\balance\AddBalanceWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\balance\Dashboard.xaml.cs">
+    <Compile Update="Views\balance\BalancePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\balance\EditBalanceWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\category\EditCategoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\transaction\AddTransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\transaction\EditTransactionWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\transaction\TransactionsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

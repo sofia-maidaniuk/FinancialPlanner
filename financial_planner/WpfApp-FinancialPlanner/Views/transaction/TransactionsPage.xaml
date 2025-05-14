@@ -1,0 +1,73 @@
+﻿<Page x:Class="WpfApp_FinancialPlanner.Views.transaction.TransactionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfApp_FinancialPlanner.Views"
+      xmlns:vm="clr-namespace:WpfApp_FinancialPlanner.ViewModels"
+      mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800" Title="Transactions">
+
+    <Grid Background="#F4F6FA" Margin="20">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Мої транзакції" FontSize="18" FontWeight="SemiBold" Foreground="#03045e" Margin="10,20,10,10"/>
+
+                <ItemsControl ItemsSource="{Binding GroupedTransactions}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Date, StringFormat='{}{0:dd MMMM yyyy}'}" FontWeight="Bold" Margin="10,10,0,5"/>
+
+                                <ItemsControl ItemsSource="{Binding Transactions}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border BorderThickness="1" BorderBrush="#D0D0D0" Background="White" CornerRadius="10" Padding="10" Margin="10,5">
+                                                <DockPanel LastChildFill="False">
+                                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" DockPanel.Dock="Left">
+                                                        <TextBlock Text="{Binding Category.Icon}" FontSize="20" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                        <TextBlock Text="{Binding Description}" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                        <TextBlock Text="{Binding Amount, StringFormat='{}{0:N2} ₴'}" Foreground="#03045e" VerticalAlignment="Center"/>
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                                                        <Button Content="Редагувати" Click="EditTransaction_Click" Padding="6,2" FontSize="12" Cursor="Hand" Margin="0,0,8,0" Background="Transparent" Foreground="#03045e" BorderBrush="#03045e" BorderThickness="1">
+                                                            <Button.Template>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
+                                                                    </Border>
+                                                                </ControlTemplate>
+                                                            </Button.Template>
+                                                        </Button>
+                                                        <Button Content="Видалити" Click="DeleteTransaction_Click" Padding="6,2" FontSize="12" Cursor="Hand" Background="Transparent" Foreground="#FF5C5C" BorderBrush="#FF5C5C" BorderThickness="1">
+                                                            <Button.Template>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border CornerRadius="8" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2"/>
+                                                                    </Border>
+                                                                </ControlTemplate>
+                                                            </Button.Template>
+                                                        </Button>
+                                                    </StackPanel>
+                                                </DockPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border CornerRadius="30" Background="#03045e" Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20">
+            <Button Content="+" Background="Transparent" Foreground="White" BorderThickness="0" FontSize="24" Padding="0" Cursor="Hand" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="AddTransaction_Click" Focusable="False">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Border>
+    </Grid>
+</Page>

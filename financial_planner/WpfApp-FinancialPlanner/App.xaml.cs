@@ -6,6 +6,8 @@ using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ClassLibrary_FinancialPlanner.Data;
+using ClassLibrary_FinancialPlanner.Interfaces;
+using ClassLibrary_FinancialPlanner.Repositories;
 
 namespace WpfApp_FinancialPlanner;
 
@@ -18,6 +20,8 @@ public partial class App : Application
         var services = new ServiceCollection();
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=FinanceDb;Trusted_Connection=True;"));
+        services.AddScoped<ITransactionRepository, TransactionRepository>();
+
 
         Services = services.BuildServiceProvider();
 

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ClassLibrary_FinancialPlanner.Models;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -9,27 +10,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp_FinancialPlanner.Views;
+using WpfApp_FinancialPlanner.Views.transaction;
+using WpfApp_FinancialPlanner.Views.balance;
 
 namespace WpfApp_FinancialPlanner;
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
 public partial class MainWindow : Window
 {
     public MainWindow()
     {
         InitializeComponent();
-        MainFrame.Navigate(new Dashboard());
+        MainFrame.Navigate(new BalancePage());
     }
 
-    private void NavigateToDashboard(object sender, RoutedEventArgs e)
+    private void NavigateToBalance(object sender, RoutedEventArgs e)
     {
-        MainFrame.Navigate(new Dashboard());
+        MainFrame.Navigate(new BalancePage());
     }
 
     private void NavigateToCategories(object sender, RoutedEventArgs e)
     {
         MainFrame.Navigate(new CategoriesPage());
+    }
+    private void NavigateToTransactions(object sender, RoutedEventArgs e)
+    {
+        MainFrame.Navigate(new TransactionsPage());
     }
 }
