@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassLibrary-FinancialPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc9f33e8ec63e4e1c2ed02c1c9b3fab8973642a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+703d18851bd25affb81e8e7999cfe3a37b47f22c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassLibrary-FinancialPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassLibrary-FinancialPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

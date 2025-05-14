@@ -11,4 +11,10 @@ namespace ClassLibrary_FinancialPlanner.Models
         public DateTime Date { get; set; }
         public List<Transaction> Transactions { get; set; } = new();
     }
+
+    public class CategoryGroup
+    {
+        public string Type { get; set; } = "";
+        public List<Category> Categories { get; set; } = new();
+    }
 }

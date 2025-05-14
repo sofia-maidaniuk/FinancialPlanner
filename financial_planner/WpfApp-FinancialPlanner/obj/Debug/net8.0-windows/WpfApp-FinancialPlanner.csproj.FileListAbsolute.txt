@@ -191,3 +191,5 @@ D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\transaction\AddTransactionWindow.baml
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\transaction\EditTransactionWindow.g.cs
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\transaction\EditTransactionWindow.baml
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\App.baml

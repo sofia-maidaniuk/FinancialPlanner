@@ -85,5 +85,28 @@ namespace WpfApp_FinancialPlanner.Views.transaction
                 MessageBox.Show("Не вдалося визначити транзакцію для видалення.", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private async void ApplyFilter_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is TransactionsViewModel vm)
+            {
+                await vm.LoadAsync();
+            }
+        }
+
+        private async void ClearFilters_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is TransactionsViewModel vm)
+            {
+                vm.SearchText = "";
+                vm.SelectedType = "усі";
+                vm.SelectedCategory = "усі";
+                vm.DateFrom = null;
+                vm.DateTo = null;
+
+                // Оновлення фільтрів і перегляд
+                await vm.LoadAsync();
+            }
+        }
     }
 }

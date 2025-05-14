@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\App.xaml
 10731395467
 
-15293488763
+161670768349
 235533082753
 MainWindow.xaml;Views\balance\AddBalanceWindow.xaml;Views\balance\BalancePage.xaml;Views\balance\EditBalanceWindow.xaml;Views\category\AddCategoryWindow.xaml;Views\category\CategoriesPage.xaml;Views\category\EditCategoryWindow.xaml;Views\transaction\AddTransactionWindow.xaml;Views\transaction\EditTransactionWindow.xaml;Views\transaction\TransactionsPage.xaml;
 
