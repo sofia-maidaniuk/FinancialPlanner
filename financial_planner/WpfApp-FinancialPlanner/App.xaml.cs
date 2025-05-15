@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ClassLibrary_FinancialPlanner.Data;
 using ClassLibrary_FinancialPlanner.Interfaces;
 using ClassLibrary_FinancialPlanner.Repositories;
+using WpfApp_FinancialPlanner.ViewModels; 
 
 namespace WpfApp_FinancialPlanner;
 
@@ -18,10 +19,13 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         var services = new ServiceCollection();
+
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=FinanceDb;Trusted_Connection=True;"));
+
         services.AddScoped<ITransactionRepository, TransactionRepository>();
 
+        services.AddTransient<AnalyticsViewModel>();
 
         Services = services.BuildServiceProvider();
 

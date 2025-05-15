@@ -12,6 +12,7 @@ using System.Windows.Shapes;
 using WpfApp_FinancialPlanner.Views;
 using WpfApp_FinancialPlanner.Views.transaction;
 using WpfApp_FinancialPlanner.Views.balance;
+using WpfApp_FinancialPlanner.Views.analytics;
 
 namespace WpfApp_FinancialPlanner;
 public partial class MainWindow : Window
@@ -19,7 +20,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        MainFrame.Navigate(new BalancePage());
+        MainFrame.Navigate(new AnalyticsPage());
     }
 
     private void NavigateToBalance(object sender, RoutedEventArgs e)
@@ -34,5 +35,10 @@ public partial class MainWindow : Window
     private void NavigateToTransactions(object sender, RoutedEventArgs e)
     {
         MainFrame.Navigate(new TransactionsPage());
+    }
+
+    private void NavigateToAnalytics(object sender, RoutedEventArgs e)
+    {
+        MainFrame.Navigate(new AnalyticsPage());
     }
 }
