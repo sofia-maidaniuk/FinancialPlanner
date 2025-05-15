@@ -16,7 +16,8 @@ namespace WpfApp_FinancialPlanner.Views.transaction
         {
             InitializeComponent();
             var repository = App.Services.GetRequiredService<ITransactionRepository>();
-            _viewModel = new TransactionsViewModel(repository);
+            var context = App.Services.GetRequiredService<AppDbContext>();
+            _viewModel = new TransactionsViewModel(repository, context);
             DataContext = _viewModel;
 
             Loaded += async (s, e) => await _viewModel.LoadAsync();
@@ -26,16 +27,12 @@ namespace WpfApp_FinancialPlanner.Views.transaction
         private async void AddTransaction_Click(object sender, RoutedEventArgs e)
         {
             var window = new AddTransactionWindow();
-            if (window.ShowDialog() == true)
+            window.TransactionAdded += async (transaction) =>
             {
-                var repository = App.Services.GetRequiredService<ITransactionRepository>();
-                await repository.AddAsync(window.CreatedTransaction);
+                await _viewModel.LoadAsync();
+            };
 
-                if (DataContext is TransactionsViewModel viewModel)
-                {
-                    await viewModel.LoadAsync(); 
-                }
-            }
+            window.ShowDialog();
         }
 
         private async void EditTransaction_Click(object sender, RoutedEventArgs e)
@@ -63,26 +60,23 @@ namespace WpfApp_FinancialPlanner.Views.transaction
             if (sender is Button button && button.DataContext is Transaction transactionToDelete)
             {
                 var result = MessageBox.Show(
-                    $"Ви дійсно хочете видалити транзакцію: \"{transactionToDelete.Description}\" на суму {transactionToDelete.Amount:N2} ₴?",
-                    "Підтвердження видалення",
+                    $"Видалити транзакцію: \"{transactionToDelete.Description}\" на {transactionToDelete.Amount:N2} ₴?",
+                    "Підтвердіть видалення",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question);
 
                 if (result == MessageBoxResult.Yes)
                 {
-                    var repository = App.Services.GetRequiredService<ITransactionRepository>();
-                    await repository.DeleteAsync(transactionToDelete.Id);
-
-                    // Перезавантаження списку після видалення
-                    if (DataContext is TransactionsViewModel viewModel)
+                    try
                     {
-                        await viewModel.LoadAsync();
+                        await _viewModel.DeleteAndReloadAsync(transactionToDelete.Id);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Помилка: {ex.Message}", "Помилка",
+                            MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Не вдалося визначити транзакцію для видалення.", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

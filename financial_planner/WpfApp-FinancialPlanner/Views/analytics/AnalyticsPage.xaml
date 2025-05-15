@@ -47,32 +47,24 @@
                 <ItemsControl ItemsSource="{Binding ExpensesByCategory}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <WrapPanel Orientation="Horizontal" Margin="10" />
+                            <WrapPanel />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
+
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Border Width="100" Height="100" Margin="6" Background="White" CornerRadius="16" BorderBrush="#E0E0E0" BorderThickness="1">
+                            <Border Width="100" Height="100" Margin="8" CornerRadius="16" Background="{Binding IsOverLimit, Converter={StaticResource LimitColorConverter}}"
+                            BorderThickness="1" BorderBrush="#ddd">
                                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                    <!-- Іконка -->
-                                    <TextBlock Text="{Binding Icon}" FontSize="20" HorizontalAlignment="Center" />
-
-                                    <!-- Сума -->
-                                    <TextBlock Text="{Binding Amount, StringFormat='{}{0:N2} ₴'}"
-                               FontSize="14" FontWeight="SemiBold"
-                               Foreground="#03045e"
-                               Margin="0,6,0,0"
-                               HorizontalAlignment="Center" />
-
-                                    <!-- Назва категорії -->
-                                    <TextBlock Text="{Binding CategoryName}"
-                               FontSize="11" Foreground="Gray"
-                               HorizontalAlignment="Center" />
+                                    <TextBlock Text="{Binding Icon}" FontSize="28" HorizontalAlignment="Center" />
+                                    <TextBlock Text="{Binding Amount, StringFormat='{}{0:N2} ₴'}" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,6,0,0"/>
+                                    <TextBlock Text="{Binding CategoryName}" FontSize="12" Foreground="Gray" HorizontalAlignment="Center" />
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+
 
             </StackPanel>
         </ScrollViewer>

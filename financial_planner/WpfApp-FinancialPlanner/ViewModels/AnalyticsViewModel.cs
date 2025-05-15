@@ -9,6 +9,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using ClassLibrary_FinancialPlanner.Data;
 
 namespace WpfApp_FinancialPlanner.ViewModels
 {
@@ -17,11 +18,13 @@ namespace WpfApp_FinancialPlanner.ViewModels
         public string CategoryName { get; set; } = "";
         public decimal Amount { get; set; }
         public string Icon { get; set; } = "❓";
+        public bool IsOverLimit { get; set; }
     }
 
     public class AnalyticsViewModel : INotifyPropertyChanged
     {
         private readonly ITransactionRepository _repository;
+        private readonly AppDbContext _context;
 
         private PlotModel _monthlyPlotModel;
         public PlotModel MonthlyPlotModel
@@ -40,9 +43,10 @@ namespace WpfApp_FinancialPlanner.ViewModels
         public DateTime? DateFrom { get; set; }
         public DateTime? DateTo { get; set; }
 
-        public AnalyticsViewModel(ITransactionRepository repository)
+        public AnalyticsViewModel(ITransactionRepository repository, AppDbContext context)
         {
             _repository = repository;
+            _context = context;
             DateFrom = DateTime.Now.AddMonths(-3);
             DateTo = DateTime.Now;
             GenerateMonthlyChart();
@@ -54,7 +58,29 @@ namespace WpfApp_FinancialPlanner.ViewModels
             transactions = FilterTransactionsByDate(transactions);
 
             MonthlyPlotModel = CreateMonthlyPlot(transactions);
-            ExpensesByCategory = GetExpensesByCategory(transactions);
+            ExpensesByCategory = transactions
+                .Where(t => t.Type.ToLower() == "витрата")
+                .GroupBy(t => t.Category)
+                .Select(g =>
+                {
+                    var category = g.Key;
+                    var amount = g.Sum(t => t.Amount);
+                    var year = DateTo?.Year ?? DateTime.Now.Year;
+                    var month = DateTo?.Month ?? DateTime.Now.Month;
+
+                    var limit = _context.BudgetLimits
+                        .FirstOrDefault(l => l.CategoryId == category!.Id && l.Year == year && l.Month == month);
+
+                    return new CategoryExpense
+                    {
+                        CategoryName = category?.Name ?? "Без категорії",
+                        Icon = category?.Icon ?? "❓",
+                        Amount = amount,
+                        IsOverLimit = limit != null && amount > limit.LimitAmount
+                    };
+                })
+                .OrderByDescending(e => e.Amount)
+                .ToList();
         }
 
         private List<Transaction> FilterTransactionsByDate(List<Transaction> transactions)

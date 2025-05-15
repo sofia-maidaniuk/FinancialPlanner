@@ -46,6 +46,33 @@ namespace ClassLibrary_FinancialPlanner.Migrations
                     b.ToTable("Balances");
                 });
 
+            modelBuilder.Entity("ClassLibrary_FinancialPlanner.Models.BudgetLimit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("LimitAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("BudgetLimits");
+                });
+
             modelBuilder.Entity("ClassLibrary_FinancialPlanner.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -106,6 +133,17 @@ namespace ClassLibrary_FinancialPlanner.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Transactions");
+                });
+
+            modelBuilder.Entity("ClassLibrary_FinancialPlanner.Models.BudgetLimit", b =>
+                {
+                    b.HasOne("ClassLibrary_FinancialPlanner.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("ClassLibrary_FinancialPlanner.Models.Transaction", b =>

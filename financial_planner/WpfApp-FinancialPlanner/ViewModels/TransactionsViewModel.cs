@@ -1,5 +1,7 @@
-﻿using ClassLibrary_FinancialPlanner.Interfaces;
+﻿using ClassLibrary_FinancialPlanner.Data;
+using ClassLibrary_FinancialPlanner.Interfaces;
 using ClassLibrary_FinancialPlanner.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -11,6 +13,7 @@ namespace WpfApp_FinancialPlanner.ViewModels
     public class TransactionsViewModel : INotifyPropertyChanged
     {
         private readonly ITransactionRepository _repository;
+        private readonly AppDbContext _context;
 
         public ObservableCollection<TransactionGroup> GroupedTransactions { get; set; } = new();
         public string SearchText { get; set; } = "";
@@ -22,9 +25,10 @@ namespace WpfApp_FinancialPlanner.ViewModels
         public ObservableCollection<string> AvailableCategories { get; set; } = new();
         public ObservableCollection<string> AvailableTypes { get; set; } = new() { "усі", "дохід", "витрата" };
 
-        public TransactionsViewModel(ITransactionRepository repository)
+        public TransactionsViewModel(ITransactionRepository repository, AppDbContext context)
         {
             _repository = repository;
+            _context = context;
         }
 
         public async Task LoadAsync()
@@ -75,7 +79,41 @@ namespace WpfApp_FinancialPlanner.ViewModels
             foreach (var cat in uniqueCategories)
                 AvailableCategories.Add(cat);
 
+            var newGroups = filtered
+               .GroupBy(t => t.Date.Date)
+               .Select(g => new TransactionGroup { Date = g.Key, Transactions = g.ToList() })
+               .OrderByDescending(g => g.Date)
+               .ToList();
+
+            GroupedTransactions.Clear();
+            foreach (var group in newGroups)
+                GroupedTransactions.Add(group);
+
             OnPropertyChanged(nameof(AvailableCategories));
+        }
+
+        public async Task DeleteAndReloadAsync(int transactionId)
+        {
+            var transaction = await _repository.GetByIdAsync(transactionId);
+            await _repository.DeleteAsync(transactionId);
+
+            // Оновити ліміти, якщо це витрата
+            if (transaction?.Type == "витрата")
+            {
+                var month = transaction.Date.Month;
+                var year = transaction.Date.Year;
+                var categoryId = transaction.CategoryId;
+
+                var limit = _context.BudgetLimits
+                    .FirstOrDefault(l => l.CategoryId == categoryId && l.Month == month && l.Year == year);
+
+                if (limit != null)
+                {
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            await LoadAsync(); 
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

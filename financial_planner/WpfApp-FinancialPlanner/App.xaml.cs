@@ -24,8 +24,11 @@ public partial class App : Application
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=FinanceDb;Trusted_Connection=True;"));
 
         services.AddScoped<ITransactionRepository, TransactionRepository>();
+        services.AddScoped<IBudgetLimitRepository, BudgetLimitRepository>();
 
         services.AddTransient<AnalyticsViewModel>();
+        services.AddScoped<BudgetLimitViewModel>();
+        services.AddScoped<TransactionsViewModel>();
 
         Services = services.BuildServiceProvider();
 

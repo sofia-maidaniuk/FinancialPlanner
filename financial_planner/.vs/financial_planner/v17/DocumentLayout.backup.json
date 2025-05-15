@@ -3,24 +3,80 @@
   "WorkspaceRootPath": "D:\\2_course\\FinancialPlanner\\financial_planner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\budget\\budgetlimitspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\budget\\budgetlimitspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\viewmodels\\budgetlimitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\viewmodels\\budgetlimitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\budget\\addbudgetlimitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\budget\\addbudgetlimitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\repositories\\budgetlimitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\repositories\\budgetlimitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\viewmodels\\analyticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\viewmodels\\analyticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\budget\\editbudgetlimitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\budget\\editbudgetlimitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\transaction\\transactionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\transaction\\transactionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\transaction\\addtransactionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\transaction\\addtransactionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\budget\\addbudgetlimitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\budget\\addbudgetlimitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\budget\\budgetlimitspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\budget\\budgetlimitspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\models\\budgetlimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\models\\budgetlimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\viewmodels\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\category\\editcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\category\\editcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\category\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\category\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\interfaces\\ibudgetlimitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\interfaces\\ibudgetlimitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\classlibrary-financialplanner\\models\\modelgroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EDA9092-09C8-4C6A-80ED-59B120F1508F}|ClassLibrary-FinancialPlanner\\ClassLibrary-FinancialPlanner.csproj|solutionrelative:classlibrary-financialplanner\\models\\modelgroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\analytics\\analyticspage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\balance\\balancepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -41,14 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\viewmodels\\balanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\viewmodels\\balanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\category\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\category\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\category\\editcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|solutionrelative:wpfapp-financialplanner\\views\\category\\editcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF24C63D-85E7-429C-931C-5441216FD3B7}|WpfApp-FinancialPlanner\\WpfApp-FinancialPlanner.csproj|d:\\2_course\\financialplanner\\financial_planner\\wpfapp-financialplanner\\views\\balance\\editbalancewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +130,226 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddBudgetLimitWindow.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:43:45.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BudgetLimitRepository.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Repositories\\BudgetLimitRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Repositories\\BudgetLimitRepository.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Repositories\\BudgetLimitRepository.cs",
+              "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Repositories\\BudgetLimitRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:00:02.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BudgetLimitsPage.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAawBgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:49:38.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BudgetLimitViewModel.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\BudgetLimitViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\ViewModels\\BudgetLimitViewModel.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\BudgetLimitViewModel.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\ViewModels\\BudgetLimitViewModel.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:44:08.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnalyticsViewModel.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwEYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T20:05:29.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditBudgetLimitWindow.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\EditBudgetLimitWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\budget\\EditBudgetLimitWindow.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\EditBudgetLimitWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\budget\\EditBudgetLimitWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T14:21:35.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionsPage.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\transaction\\TransactionsPage.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\transaction\\TransactionsPage.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\transaction\\TransactionsPage.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\transaction\\TransactionsPage.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T19:52:49.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddTransactionWindow.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\transaction\\AddTransactionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\transaction\\AddTransactionWindow.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\transaction\\AddTransactionWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\transaction\\AddTransactionWindow.xaml.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAwHwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T19:40:52.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddBudgetLimitWindow.xaml",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\budget\\AddBudgetLimitWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T14:07:38.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:00:20.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BudgetLimitsPage.xaml",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\budget\\BudgetLimitsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T13:44:47.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BudgetLimit.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Models\\BudgetLimit.cs",
+              "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Models\\BudgetLimit.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Models\\BudgetLimit.cs",
+              "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Models\\BudgetLimit.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:37:01.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryViewModel.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\CategoryViewModel.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\ViewModels\\CategoryViewModel.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\CategoryViewModel.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\ViewModels\\CategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:28:23.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\MainWindow.xaml",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T13:50:24.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Models\\Category.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Models\\Category.cs",
+              "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Models\\Category.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:10:19.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoriesPage.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:19:18.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditCategoryWindow.xaml.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAYwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:26:53.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IBudgetLimitRepository.cs",
+              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Interfaces\\IBudgetLimitRepository.cs",
+              "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Interfaces\\IBudgetLimitRepository.cs",
+              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Interfaces\\IBudgetLimitRepository.cs",
+              "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Interfaces\\IBudgetLimitRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:59:12.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "ModelGroups.cs",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\ClassLibrary-FinancialPlanner\\Models\\ModelGroups.cs",
               "RelativeDocumentMoniker": "ClassLibrary-FinancialPlanner\\Models\\ModelGroups.cs",
@@ -90,50 +357,11 @@
               "RelativeToolTip": "ClassLibrary-FinancialPlanner\\Models\\ModelGroups.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:08:22.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T11:08:22.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AnalyticsViewModel.cs",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs*",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\ViewModels\\AnalyticsViewModel.cs*",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAkwHoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:05:29.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnalyticsPage.xaml",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-14T20:23:30.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnalyticsPage.xaml.cs",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml.cs",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml.cs",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:26:21.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "BalancePage.xaml",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\BalancePage.xaml",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\BalancePage.xaml",
@@ -144,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "EditBalanceWindow.xaml",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\EditBalanceWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\EditBalanceWindow.xaml",
@@ -155,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "BalancePage.xaml.cs",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\BalancePage.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\BalancePage.xaml.cs",
@@ -167,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "AddBalanceWindow.xaml.cs",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\AddBalanceWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\AddBalanceWindow.xaml.cs",
@@ -179,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "BalanceViewModel.cs",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\ViewModels\\BalanceViewModel.cs",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\ViewModels\\BalanceViewModel.cs",
@@ -191,19 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategoriesPage.xaml.cs",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\category\\CategoriesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T22:19:18.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "EditBalanceWindow.xaml.cs",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\EditBalanceWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\EditBalanceWindow.xaml.cs",
@@ -215,19 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EditCategoryWindow.xaml.cs",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\category\\EditCategoryWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T22:26:53.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "AddBalanceWindow.xaml",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\balance\\AddBalanceWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\balance\\AddBalanceWindow.xaml",
@@ -238,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "AddCategoryWindow.xaml",
               "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\category\\AddCategoryWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\category\\AddCategoryWindow.xaml",
@@ -256,40 +460,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "268012d7-e97d-4b72-9309-444d355b43ef",
-        "Display": 1,
-        "X": 442,
-        "Y": 239,
-        "Width": 800,
-        "Height": 600,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AnalyticsPage.xaml",
-              "DocumentMoniker": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "RelativeDocumentMoniker": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "ToolTip": "D:\\2_course\\FinancialPlanner\\financial_planner\\WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "RelativeToolTip": "WpfApp-FinancialPlanner\\Views\\analytics\\AnalyticsPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T11:12:14.53Z",
-              "EditorCaption": ""
             }
           ]
         }

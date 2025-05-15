@@ -13,6 +13,7 @@ using WpfApp_FinancialPlanner.Views;
 using WpfApp_FinancialPlanner.Views.transaction;
 using WpfApp_FinancialPlanner.Views.balance;
 using WpfApp_FinancialPlanner.Views.analytics;
+using WpfApp_FinancialPlanner.Views.budget; 
 
 namespace WpfApp_FinancialPlanner;
 public partial class MainWindow : Window
@@ -40,5 +41,10 @@ public partial class MainWindow : Window
     private void NavigateToAnalytics(object sender, RoutedEventArgs e)
     {
         MainFrame.Navigate(new AnalyticsPage());
+    }
+
+    private void NavigateToBudgetLimits(object sender, RoutedEventArgs e)
+    {
+        MainFrame.Navigate(new BudgetLimitsPage());
     }
 }
