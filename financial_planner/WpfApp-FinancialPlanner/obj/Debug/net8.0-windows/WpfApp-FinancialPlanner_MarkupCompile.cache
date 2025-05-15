@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\App.xaml
-11-665842686
+14-1898890238
 
-18-79946209
+23-877089693
 238614400585
-MainWindow.xaml;Views\analytics\AnalyticsPage.xaml;Views\balance\AddBalanceWindow.xaml;Views\balance\BalancePage.xaml;Views\balance\EditBalanceWindow.xaml;Views\category\AddCategoryWindow.xaml;Views\category\CategoriesPage.xaml;Views\category\EditCategoryWindow.xaml;Views\transaction\AddTransactionWindow.xaml;Views\transaction\EditTransactionWindow.xaml;Views\transaction\TransactionsPage.xaml;
+MainWindow.xaml;Views\analytics\AnalyticsPage.xaml;Views\balance\AddBalanceWindow.xaml;Views\balance\BalancePage.xaml;Views\balance\EditBalanceWindow.xaml;Views\budget\AddBudgetLimitWindow.xaml;Views\budget\BudgetLimitsPage.xaml;Views\budget\EditBudgetLimitWindow.xaml;Views\category\AddCategoryWindow.xaml;Views\category\CategoriesPage.xaml;Views\category\EditCategoryWindow.xaml;Views\transaction\AddTransactionWindow.xaml;Views\transaction\EditTransactionWindow.xaml;Views\transaction\TransactionsPage.xaml;
 
 False
 

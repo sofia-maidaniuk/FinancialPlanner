@@ -13,6 +13,7 @@ namespace ClassLibrary_FinancialPlanner.Data
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Balance> Balances { get; set; }
+        public DbSet<BudgetLimit> BudgetLimits { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)

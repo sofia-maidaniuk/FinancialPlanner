@@ -198,3 +198,9 @@ D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\WpfApp-FinancialPlanner.pdb
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\WpfApp-FinancialPlanner.genruntimeconfig.cache
 D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\ref\WpfApp-FinancialPlanner.dll
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\BudgetLimitsPage.g.cs
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\BudgetLimitsPage.baml
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\AddBudgetLimitWindow.baml
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\AddBudgetLimitWindow.g.cs
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\EditBudgetLimitWindow.baml
+D:\2_course\FinancialPlanner\financial_planner\WpfApp-FinancialPlanner\obj\Debug\net8.0-windows\Views\budget\EditBudgetLimitWindow.g.cs

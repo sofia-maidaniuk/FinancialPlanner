@@ -5,6 +5,15 @@
     <Compile Update="Views\analytics\AnalyticsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\budget\AddBudgetLimitWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\budget\BudgetLimitsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\budget\EditBudgetLimitWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\category\AddCategoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

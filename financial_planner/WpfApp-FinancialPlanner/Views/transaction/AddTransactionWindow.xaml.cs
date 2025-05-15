@@ -13,6 +13,8 @@ namespace WpfApp_FinancialPlanner.Views.transaction
         private readonly ClassLibrary_FinancialPlanner.Data.AppDbContext _context;
 
         public Transaction? CreatedTransaction { get; private set; }
+        public event Action<Transaction>? TransactionAdded;
+
 
         public AddTransactionWindow()
         {
@@ -81,9 +83,46 @@ namespace WpfApp_FinancialPlanner.Views.transaction
                     Date = DatePicker.SelectedDate ?? DateTime.Now
                 };
 
+                // Перевірка на перевищення ліміту
+                if (selectedType.ToLower() == "витрата")
+                {
+                    var month = newTransaction.Date.Month;
+                    var year = newTransaction.Date.Year;
+                    var categoryId = selectedCategory.Id;
+
+                    // Сума вже існуючих витрат за категорією
+                    var spent = _context.Transactions
+                        .Where(t => t.Type.ToLower() == "витрата"
+                                 && t.CategoryId == categoryId
+                                 && t.Date.Month == month
+                                 && t.Date.Year == year)
+                        .Sum(t => t.Amount);
+
+                    // Ліміт
+                    var limit = _context.BudgetLimits
+                        .FirstOrDefault(l => l.CategoryId == categoryId && l.Month == month && l.Year == year);
+
+                    if (limit != null && spent + amount > limit.LimitAmount)
+                    {
+                        var result = MessageBox.Show(
+                            $"⚠️ Ви перевищуєте бюджет по категорії «{selectedCategory.Name}». Продовжити?",
+                            "Перевищення ліміту",
+                            MessageBoxButton.YesNo,
+                            MessageBoxImage.Warning
+                        );
+
+                        if (result == MessageBoxResult.No)
+                        {
+                            _isSaving = false;
+                            return;
+                        }
+                    }
+                }
+
+
                 await _repository.AddAsync(newTransaction);
                 CreatedTransaction = newTransaction;
-
+                TransactionAdded?.Invoke(newTransaction); 
                 DialogResult = true;
                 Close();
             }

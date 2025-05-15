@@ -59,6 +59,17 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+
+            <Button Content="Ліміти" Click="NavigateToBudgetLimits" Margin="20,5" Padding="10" Height="20"
+            Background="Transparent" Foreground="White" BorderBrush="White" BorderThickness="1" Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
 
         <!-- Контент -->
