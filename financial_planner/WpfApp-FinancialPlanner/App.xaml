@@ -5,6 +5,8 @@
              xmlns:conv="clr-namespace:WpfApp_FinancialPlanner.Converters"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <conv:StringNullOrEmptyToVisibilityConverter x:Key="StringNullOrEmptyToVisibilityConverter"/>
+        <ResourceDictionary>
+            <conv:StringNullOrEmptyToVisibilityConverter x:Key="StringNullOrEmptyToVisibilityConverter"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
