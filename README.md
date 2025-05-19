@@ -147,3 +147,4 @@ if (string.IsNullOrWhiteSpace(DescriptionBox.Text))
 <img src="result img/category_delete.png"  alt="Категорії" width="500"> 
 <img src="result img/limit.png"  alt="Ліміти" width="500"> 
 <img src="result img/limit_edit.png"  alt="Ліміти" width="500"> 
+<img src="result img/lines.png"  alt="Кількість рядків"> 
