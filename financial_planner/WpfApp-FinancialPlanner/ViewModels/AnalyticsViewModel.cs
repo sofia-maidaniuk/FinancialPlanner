@@ -10,17 +10,10 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using ClassLibrary_FinancialPlanner.Data;
+using ClassLibrary_FinancialPlanner.Services;
 
 namespace WpfApp_FinancialPlanner.ViewModels
 {
-    public class CategoryExpense
-    {
-        public string CategoryName { get; set; } = "";
-        public decimal Amount { get; set; }
-        public string Icon { get; set; } = "❓";
-        public bool IsOverLimit { get; set; }
-    }
-
     public class AnalyticsViewModel : INotifyPropertyChanged
     {
         private readonly ITransactionRepository _repository;
@@ -58,29 +51,9 @@ namespace WpfApp_FinancialPlanner.ViewModels
             transactions = FilterTransactionsByDate(transactions);
 
             MonthlyPlotModel = CreateMonthlyPlot(transactions);
-            ExpensesByCategory = transactions
-                .Where(t => t.Type.ToLower() == "витрата")
-                .GroupBy(t => t.Category)
-                .Select(g =>
-                {
-                    var category = g.Key;
-                    var amount = g.Sum(t => t.Amount);
-                    var year = DateTo?.Year ?? DateTime.Now.Year;
-                    var month = DateTo?.Month ?? DateTime.Now.Month;
 
-                    var limit = _context.BudgetLimits
-                        .FirstOrDefault(l => l.CategoryId == category!.Id && l.Year == year && l.Month == month);
-
-                    return new CategoryExpense
-                    {
-                        CategoryName = category?.Name ?? "Без категорії",
-                        Icon = category?.Icon ?? "❓",
-                        Amount = amount,
-                        IsOverLimit = limit != null && amount > limit.LimitAmount
-                    };
-                })
-                .OrderByDescending(e => e.Amount)
-                .ToList();
+            var analyticsService = new AnalyticsService(_context);
+            ExpensesByCategory = await analyticsService.GetExpensesByCategoryAsync(transactions, DateTo);
         }
 
         private List<Transaction> FilterTransactionsByDate(List<Transaction> transactions)
@@ -124,21 +97,6 @@ namespace WpfApp_FinancialPlanner.ViewModels
             model.Series.Add(incomeSeries);
             model.Series.Add(expenseSeries);
             return model;
-        }
-
-        private List<CategoryExpense> GetExpensesByCategory(List<Transaction> transactions)
-        {
-            return transactions
-                .Where(t => t.Type.ToLower() == "витрата")
-                .GroupBy(t => t.Category)
-                .Select(g => new CategoryExpense
-                {
-                    CategoryName = g.Key?.Name ?? "Без категорії",
-                    Amount = g.Sum(t => t.Amount),
-                    Icon = g.Key?.Icon ?? "❓"
-                })
-                .OrderByDescending(e => e.Amount)
-                .ToList();
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
