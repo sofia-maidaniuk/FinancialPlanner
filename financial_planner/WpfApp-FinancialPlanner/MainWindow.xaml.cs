@@ -13,38 +13,47 @@ using WpfApp_FinancialPlanner.Views;
 using WpfApp_FinancialPlanner.Views.transaction;
 using WpfApp_FinancialPlanner.Views.balance;
 using WpfApp_FinancialPlanner.Views.analytics;
-using WpfApp_FinancialPlanner.Views.budget; 
+using WpfApp_FinancialPlanner.Views.budget;
 
-namespace WpfApp_FinancialPlanner;
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    private readonly AnalyticsPage _analyticsPage;
+    private readonly BalancePage _balancePage;
+    private readonly CategoriesPage _categoriesPage;
+    private readonly TransactionsPage _transactionsPage;
+    private readonly BudgetLimitsPage _budgetPage;
+
+    public MainWindow(
+        AnalyticsPage analyticsPage,
+        BalancePage balancePage,
+        CategoriesPage categoriesPage,
+        TransactionsPage transactionsPage,
+        BudgetLimitsPage budgetPage)
     {
         InitializeComponent();
-        MainFrame.Navigate(new AnalyticsPage());
+
+        _analyticsPage = analyticsPage;
+        _balancePage = balancePage;
+        _categoriesPage = categoriesPage;
+        _transactionsPage = transactionsPage;
+        _budgetPage = budgetPage;
+
+        MainFrame.Navigate(_analyticsPage);
     }
 
     private void NavigateToBalance(object sender, RoutedEventArgs e)
-    {
-        MainFrame.Navigate(new BalancePage());
-    }
+        => MainFrame.Navigate(_balancePage);
 
     private void NavigateToCategories(object sender, RoutedEventArgs e)
-    {
-        MainFrame.Navigate(new CategoriesPage());
-    }
+        => MainFrame.Navigate(_categoriesPage);
+
     private void NavigateToTransactions(object sender, RoutedEventArgs e)
-    {
-        MainFrame.Navigate(new TransactionsPage());
-    }
+        => MainFrame.Navigate(_transactionsPage);
 
     private void NavigateToAnalytics(object sender, RoutedEventArgs e)
-    {
-        MainFrame.Navigate(new AnalyticsPage());
-    }
+        => MainFrame.Navigate(_analyticsPage);
 
     private void NavigateToBudgetLimits(object sender, RoutedEventArgs e)
-    {
-        MainFrame.Navigate(new BudgetLimitsPage());
-    }
+        => MainFrame.Navigate(_budgetPage);
 }
+    
