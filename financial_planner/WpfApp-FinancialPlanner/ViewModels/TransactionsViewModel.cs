@@ -53,19 +53,8 @@ namespace WpfApp_FinancialPlanner.ViewModels
             if (DateTo.HasValue)
                 filtered = filtered.Where(t => t.Date.Date <= DateTo.Value.Date);
 
-            // Групування
-            var grouped = filtered
-                .GroupBy(t => t.Date.Date)
-                .OrderByDescending(g => g.Key)
-                .Select(g => new TransactionGroup
-                {
-                    Date = g.Key,
-                    Transactions = g.OrderByDescending(t => t.Date).ToList()
-                });
-
-            GroupedTransactions.Clear();
-            foreach (var group in grouped)
-                GroupedTransactions.Add(group);
+            // Застосувати групування до відфільтрованих транзакцій
+            ApplyGrouping(filtered);
 
             // Категорії для фільтра
             var uniqueCategories = transactions
@@ -79,17 +68,23 @@ namespace WpfApp_FinancialPlanner.ViewModels
             foreach (var cat in uniqueCategories)
                 AvailableCategories.Add(cat);
 
-            var newGroups = filtered
-               .GroupBy(t => t.Date.Date)
-               .Select(g => new TransactionGroup { Date = g.Key, Transactions = g.ToList() })
-               .OrderByDescending(g => g.Date)
-               .ToList();
+            OnPropertyChanged(nameof(AvailableCategories));
+        }
+
+        private void ApplyGrouping(IQueryable<Transaction> transactions)
+        {
+            var groups = transactions
+                .GroupBy(t => t.Date.Date)
+                .Select(g => new TransactionGroup
+                {
+                    Date = g.Key,
+                    Transactions = g.OrderByDescending(t => t.Date).ToList()
+                })
+                .OrderByDescending(g => g.Date);
 
             GroupedTransactions.Clear();
-            foreach (var group in newGroups)
+            foreach (var group in groups)
                 GroupedTransactions.Add(group);
-
-            OnPropertyChanged(nameof(AvailableCategories));
         }
 
         public async Task DeleteAndReloadAsync(int transactionId)
@@ -113,7 +108,7 @@ namespace WpfApp_FinancialPlanner.ViewModels
                 }
             }
 
-            await LoadAsync(); 
+            await LoadAsync();
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
